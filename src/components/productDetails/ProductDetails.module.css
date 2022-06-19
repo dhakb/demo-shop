@@ -1,0 +1,220 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  max-width: 1240px;
+  margin-top: 10%;
+}
+
+.imagesContainer {
+  display: flex;
+}
+
+.imagesList {
+  display: flex;
+  flex-direction: column;
+  margin-right: 60px;
+  gap: 30px;
+}
+
+.imagesList img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.imagesList img:hover {
+  box-shadow: 0px 4px 35px rgba(168, 172, 176, 0.9);
+  cursor: pointer;
+}
+
+.mainImage {
+  display: flex;
+}
+
+.mainImage img {
+  width: 610px;
+  height: 511px;
+  object-fit: contain;
+}
+
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 15px;
+}
+
+.brand {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 27px;
+  color: #1d1f22;
+  margin-bottom: 15px;
+}
+
+.name {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 27px;
+  color: #1d1f22;
+  margin-bottom: 30px;
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+}
+
+.priceLabel {
+  font-family: "Roboto Condensed", serif;
+  font-size: 18px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 18px;
+  color: #1d1f22;
+  margin-bottom: 20px;
+}
+
+.amount {
+  font-family: Raleway, serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 18px;
+  color: #1d1f22;
+}
+
+.addButton {
+  background-color: #5ece7b;
+  border: none;
+  color: #ffffff;
+  width: 292px;
+  height: 52px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 120%;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.addButton:hover {
+  background-color: #4fa866;
+  cursor: pointer;
+}
+
+.addButton:active {
+  background-color: #4fa867b4;
+}
+
+.disabledButton {
+  border: none;
+  width: 292px;
+  height: 52px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 120%;
+  background: #e2e2e2;
+  opacity: 0.9;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.description {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #1d1f22;
+  line-height: 150%;
+  width: 292px;
+  height: 103px;
+}
+
+.showMore {
+  border: none;
+  background-color: transparent;
+  color: #4da364;
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10%;
+  }
+  .infoContainer {
+    margin: 100px
+  }
+
+  .mainImage img {
+    width: 510px;
+    height: 411px;
+    object-fit: contain;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    margin-top: 25%;
+  }
+
+  .mainImage img {
+    width: 410px;
+    height: 311px;
+    object-fit: contain;
+  }
+
+  .brand {
+    font-size: 25px;
+    line-height: 27px;
+    margin-bottom: 5px;
+  }
+
+  .name {
+    font-size: 22px;
+    line-height: 22px;
+    margin-bottom: 15px;
+  }
+
+  .priceLabel {
+    line-height: 12px;
+    margin-bottom: 10px;
+  }
+
+  .amount {
+    font-size: 18px;
+    line-height: 8px;
+  }
+
+  .addButton {
+    width: 250px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+
+  .disabledButton {
+    width: 250px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+
+  .description {
+    width: 250px;
+  }
+}

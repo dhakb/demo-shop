@@ -1,0 +1,38 @@
+.cartButtonContainer {
+    position: relative;
+    background-color: transparent;
+    width: max-content;
+    margin-left: 22px;
+}
+
+.cartIcon {
+    position: relative;
+    top: 2px;
+    padding: 0 3px;
+    cursor: pointer;
+    width: 31px;
+    height: 31px;
+}
+
+.counter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    padding: 3px 7px;
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 14px;
+    font-style: normal;
+    color: #ffffff;
+    background-color: #1d1f22;
+    border-radius: 50%;
+    top: -8px;
+    right: -8px;
+}
+
+
+
+

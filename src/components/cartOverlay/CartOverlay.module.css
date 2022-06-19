@@ -1,0 +1,257 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background: rgba(57, 55, 72, 0.22);
+
+}
+
+.overlayContainer {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 325px;
+  max-height: 530px;
+  background-color: #ffffff;
+  right: -10px;
+  top: 40px;
+  overflow-y: auto;
+  z-index: 11;
+}
+
+.overlayContent {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.bagTitleWrapper {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.bagTitle {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 160%;
+  color: #1d1f22;
+}
+
+.productItems {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.productItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.productInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.productName {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.price {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 160%;
+}
+
+.attributesWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.attributes {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+  align-items: center;
+  gap: 5px;
+}
+
+.attributeItem {
+  width: 24px;
+  height: 24px;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+  border: 1px solid #1d1f22;
+  text-align: center;
+}
+
+.colorAttributeItem {
+  width: 16px;
+  height: 16px;
+}
+
+.capacityAttributeItem {
+  width: 44px;
+  height: 24px;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+  border: 1px solid #1d1f22;
+  text-align: center;
+}
+
+.attributeName {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 10px;
+}
+
+.selectedAttribute {
+  color: #ffffff;
+  background-color: #1d1f22;
+}
+
+.selectedColorAttribute {
+  border: 1px solid #5ece7b;
+  padding: 1px;
+}
+
+.buttonsAndPhoto {
+  display: flex;
+}
+
+.quantityBtns {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.quantityBtns button {
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  background-color: #ffffff;
+  border: 1px solid #1d1f22;
+  cursor: pointer;
+}
+
+.quantityBtns button:active {
+  border: 2px solid #1d1f22;
+  box-shadow: 0px 4px 5px rgba(168, 172, 176, 0.9);
+}
+
+.quantityCounter {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 160%;
+}
+
+.productImg {
+  width: 121px;
+  height: 190px;
+  margin-left: 5px;
+  object-fit: contain;
+}
+
+.totalWrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.totalTitle {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+  color: #1d1f22;
+}
+
+.totalAmount {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 160%;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.viewBag {
+  box-sizing: border-box;
+  width: 140px;
+  height: 43px;
+  background-color: #ffffff;
+  border: 1px solid #1d1f22;
+  font-family: "Raleway";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 120%;
+  text-transform: uppercase;
+  margin-right: 10px;
+}
+
+.viewBag:hover {
+  background-color: #ececec;
+  cursor: pointer;
+}
+
+.checkOut {
+  width: 140px;
+  height: 43px;
+  background-color: #5ece7b;
+  border: none;
+  color: white;
+  font-family: "Raleway";
+  font-style: noraml;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.checkOut:hover {
+  background-color: #4fa866;
+  cursor: pointer;
+}
+
+.overlayContainer::-webkit-scrollbar-track {
+  background-color: #ffffff;
+}
+
+.overlayContainer::-webkit-scrollbar {
+  width: 4px;
+}
+
+.overlayContainer::-webkit-scrollbar-thumb {
+  background-color: #5ece7b;
+}

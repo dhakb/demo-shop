@@ -1,0 +1,150 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.cartContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  max-width: 1240px;
+  height: 100%;
+  margin-top: 120px;
+  margin-bottom: 100px;
+}
+
+.title {
+  font-family: "Raleway";
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 70px;
+}
+
+.productItems {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 60px;
+  border-top: 2px solid #E5E5E5;
+  padding-top: 15px;
+}
+
+.tax {
+  font-family: Raleway;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.tax span {
+  font-family: Raleway;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.quantity {
+  font-family: Raleway;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.quantity span {
+  font-family: "Raleway";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.total {
+  font-family: "Raleway";
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0em;
+}
+
+.total span {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.orderButton {
+  width: 279px;
+  height: 43px;
+  background: #5ece7b;
+  border: none;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 120%;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+
+.orderButton:hover {
+  background-color: #4fa866;
+  cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  .cartContainer {
+    margin-top: 150px;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .tax {
+    font-size: 20px;
+  }
+
+  .tax span {
+    font-size: 20px;
+  }
+
+  .quantity {
+    font-size: 20px;
+  }
+
+  .quantity span {
+    font-size: 20px;
+  }
+
+  .total {
+    font-size: 20px;
+  }
+
+  .total span {
+    font-size: 20px;
+  }
+
+  .orderButton {
+    width: 240px;
+  }
+}

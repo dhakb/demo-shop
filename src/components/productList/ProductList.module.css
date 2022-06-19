@@ -1,0 +1,39 @@
+.productsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 386px);
+  justify-content: center;
+  grid-gap: 20px;
+  width: 100%;
+  max-width: 1240px;
+  margin-top: 200px;
+  margin-bottom: 100px;
+}
+
+.categoryName {
+  position: relative;
+  top: 120px;
+  text-transform: capitalize;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 60%;
+  color: #1D1F22
+}
+
+
+@media (max-width: 1280px) {
+  .productsContainer {
+    grid-template-columns: 50% 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  .productsContainer {
+    grid-template-columns: 100%;
+    margin-top: 220px;
+  }
+  .categoryName {
+    top: 150px;
+  }
+}

@@ -1,0 +1,71 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.attributesContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+}
+
+.attribute {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 63px;
+  height: 45px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border: 1px solid #1d1f22;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  color: #292929;
+  cursor: pointer;
+}
+
+.colorAttribute {
+  width: 32px;
+  height: 32px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-spacing: 5px;
+  cursor: pointer;
+}
+
+.attrName {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.selected {
+  color: #ffffff;
+  background-color: #1d1f22;
+}
+
+.selectedColorAttribute {
+  box-sizing: border-box;
+  border: 1px solid #5ece7b;
+  padding: 1px;
+}
+
+@media (max-width: 767px) {
+  .attribute {
+    width: 55px;
+    height: 35px;
+    font-size: 12px;
+  }
+
+  .colorAttribute {
+    width: 22px;
+    height: 22px;
+  }
+}
