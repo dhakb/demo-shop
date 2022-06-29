@@ -61,3 +61,39 @@ export const getProductById = (productId) => {
     }
     `;
 };
+
+export const getProductsByCategory = (categoryName) => {
+  return gql`
+    query {
+      category(input: { title: ${categoryName}}) {
+        name
+        products {
+          id
+          name
+          category
+          attributes {
+            id
+            name
+            type
+            items {
+              displayValue
+              id
+              value
+            }
+          }
+          description
+          inStock
+          brand
+          gallery
+          prices {
+            currency {
+              label
+              symbol
+            }
+            amount
+          }
+        }
+      }
+    }
+  `;
+};
