@@ -254,3 +254,15 @@
 .overlayContainer::-webkit-scrollbar-thumb {
   background-color: #5ece7b;
 }
+
+
+
+@media (max-width: 767px) {
+  .backdrop {
+    top: 110px;
+  }
+  .overlayContainer {
+    top: 72px;
+  }
+  
+}
