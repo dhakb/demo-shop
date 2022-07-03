@@ -51,21 +51,41 @@ export const getCurrencies = gql`
   }
 `;
 
-export const getProductById = (productId) => {
-  return gql`
+export const getProductById = (productId) => gql`
     query {
-      product(id: ${productId}) {
+      product(id: "${productId}") {
+        id
         name
+        category
+        attributes {
+          id
+          name
+          type
+          items {
+            displayValue
+            id
+            value
+          }
+        }
+        description
+        inStock
         brand
+        gallery
+        prices {
+          currency {
+            label
+            symbol
+          }
+          amount
+        }
       }
     }
     `;
-};
 
-export const getProductsByCategory = (categoryName) => {
-  return gql`
+
+export const getProductsByCategory = (categoryName) => gql`
     query {
-      category(input: { title: ${categoryName}}) {
+      category(input: { title: "${categoryName}"}) {
         name
         products {
           id
@@ -96,4 +116,3 @@ export const getProductsByCategory = (categoryName) => {
       }
     }
   `;
-};
