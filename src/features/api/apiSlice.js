@@ -1,11 +1,12 @@
 import { createApi } from "@reduxjs/toolkit/query";
-import { request, gql, ClientError } from "graphql-request";
+import { request, ClientError } from "graphql-request";
 
 import {
   getCategories,
   getProducts,
   getCurrencies,
   getProductById,
+  getProductsByCategory,
 } from "../../utils/grapqlQueries";
 
 const graphqlBaseQuery =
@@ -46,20 +47,17 @@ export const apiSlice = createApi({
       }),
       transformResponse: (response) => response.currencies,
     }),
-    
     getProductById: builder.query({
-      query: (productId) => ({
-        body: gql`
-          query {
-            product(id: ${productId}) {
-              name
-              brand
-            }
-          }
-        `,
+      query: (id) => ({
+        body: getProductById(id)
       }),
       transformResponse: (response) => response.product,
     }),
+    getProductsByCategory: builder.query({
+      query: (category) => ({
+        body: getProductsByCategory(category),
+      }),
+      transformResponse: (response) => response.category,
+    }),
   }),
 });
-
