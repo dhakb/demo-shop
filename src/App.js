@@ -23,7 +23,6 @@ class App extends Component {
             path="/:categoryName/:productId"
             component={ProductDetailsPage}
           />
-          <Redirect exact from="/" to="/all" />
         </Switch>
       </Layout>
     );

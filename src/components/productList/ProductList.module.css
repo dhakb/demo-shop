@@ -1,17 +1,18 @@
 .productsContainer {
-  display: grid;
+  position: relative;
+  display: grid; 
   grid-template-columns: repeat(auto-fill, 386px);
-  justify-content: center;
-  grid-gap: 20px;
+  grid-gap: 40px;
   width: 100%;
-  max-width: 1240px;
+  max-width: 1440px;
   margin-top: 200px;
   margin-bottom: 100px;
+  top: 87px;
 }
 
 .categoryName {
   position: relative;
-  top: 120px;
+  top: 160px;
   text-transform: capitalize;
   font-family: "Raleway";
   font-style: normal;

@@ -1,5 +1,5 @@
-import React, {Fragment} from "react";
-import { v4 as uuidv4 } from 'uuid';
+import React, { Fragment } from "react";
+import { v4 as uuidv4 } from "uuid";
 import parse from "html-react-parser";
 import { connect } from "react-redux";
 import { apiSlice } from "../../features/api/apiSlice";
@@ -8,8 +8,9 @@ import Attributes from "../attributes/Attributes";
 
 import classes from "./ProductDetails.module.css";
 
-
 const { addProductToCart } = cartSliceActions;
+
+let productId;
 
 class ProductDetails extends React.Component {
   constructor(props) {
@@ -24,7 +25,7 @@ class ProductDetails extends React.Component {
   }
 
   componentDidMount() {
-    this.props.getProducts();
+    this.props.getProductById(this.props.id);
   }
 
   onAddProduct(product) {
@@ -53,16 +54,14 @@ class ProductDetails extends React.Component {
   }
 
   render() {
-    
-    const id = this.props.id;
-    const product = this.props.products.data
-      ?.filter((product) => product.name === "all")[0]
-      .products?.find((product) => product.id === id);
-
+    productId = this.props.id
+    const product = this.props.product.data
     const attributes = product?.attributes;
     const inStock = product?.inStock;
-    const { isLoading, isSuccess } = this.props.products;
+    const { isLoading, isSuccess } = this.props.product;
+
     let content;
+
     if (isLoading) {
       return <div>Loading...</div>;
     } else if (isSuccess) {
@@ -169,13 +168,13 @@ class ProductDetails extends React.Component {
 
 const mapStateToProps = (state) => {
   return {
-    products: apiSlice.endpoints.getProducts.select()(state),
+    product: apiSlice.endpoints.getProductById.select(productId)(state),
     currency: state.currency,
   };
 };
 
 const mapDispatchToProps = {
-  getProducts: apiSlice.endpoints.getProducts.initiate,
+  getProductById: apiSlice.endpoints.getProductById.initiate,
   addProductToCart,
 };
 

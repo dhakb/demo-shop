@@ -7,7 +7,7 @@
   height: 260px;
   box-shadow: 0 5px 35px rgba(168, 172, 176, 0.19);
   width: 115px;
-  z-index: 2;
+  z-index: 20;
   background-color: #ffffff;
   line-height: 250%;
   top: 40px;
