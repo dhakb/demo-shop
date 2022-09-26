@@ -26,7 +26,7 @@ const graphqlBaseQuery =
 export const apiSlice = createApi({
   reducerPath: "api",
   baseQuery: graphqlBaseQuery({
-    baseUrl: "http://localhost:4000/graphql",
+    baseUrl: "https://apolo-server-scandi-shop.herokuapp.com",
   }),
   endpoints: (builder) => ({
     getCategories: builder.query({
