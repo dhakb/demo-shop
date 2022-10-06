@@ -1,4 +1,4 @@
-# DemoShop [preview](https://scandi-shop-storefront.herokuapp.com/cart)
+# DemoShop [preview](https://demo-shop-storefront.herokuapp.com/)
 
 ### About and challanges
  
