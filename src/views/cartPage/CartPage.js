@@ -1,9 +1,9 @@
 import React from "react";
 import { v4 as uuidv4 } from "uuid";
 import { connect } from "react-redux";
-import { cartSliceActions } from "../features/cartSlice";
+import { cartSliceActions } from "../../features/cartSlice";
 
-import SingleCartProduct from "../components/singleCartProduct/SingleCartProduct";
+import SingleCartProduct from "../../components/singleCartProduct/SingleCartProduct";
 
 import classes from "./CartPage.module.css";
 
