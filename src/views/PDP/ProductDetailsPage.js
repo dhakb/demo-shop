@@ -1,5 +1,5 @@
 import React from "react";
-import ProductDetails from "../components/productDetails/ProductDetails";
+import ProductDetails from "../../components/productDetails/ProductDetails";
 
 class ProductDetailsPage extends React.Component {
   render() {

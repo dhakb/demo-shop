@@ -1,10 +1,11 @@
 import React, { Component } from "react";
-import { Switch, Route, Redirect } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 
 import Layout from "./components/layout/Layout";
-import CartPage from "./views/CartPage";
-import ProductDetailsPage from "./views/ProductDetailsPage";
-import ProductListingPage from "./views/ProductListingPage";
+import CartPage from "./views/cartPage/CartPage";
+import ProductDetailsPage from "./views/PDP/ProductDetailsPage";
+import ProductListingPage from "./views/PLP/ProductListingPage";
+import HomePage from "./views/homePage/HomePage";
 
 
 class App extends Component {
@@ -12,6 +13,7 @@ class App extends Component {
     return (
       <Layout>
         <Switch>
+          <Route exact path="/" component={HomePage}/>
           <Route exact path="/cart" component={CartPage} />
           <Route
             exact

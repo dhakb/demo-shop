@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import ProductList from "../components/productList/ProductList";
+import ProductList from "../../components/productList/ProductList";
 
 import classes from "./ProductListingPage.module.css";
 
