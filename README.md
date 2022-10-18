@@ -21,7 +21,7 @@
   * add product to cart from PLP with first attrubutes (options) as default.
   * add/remove products and change their amounts in cart. 
   * add/remove products from cart overlay (minicart).
-  * add same product with different attributes as a seperate item.
+  * add same product with different attributes as a separate item.
   * change currency of the store to one of the available currencies.
   * review product photos on cart page
 
