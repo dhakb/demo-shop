@@ -15,7 +15,7 @@
   * PLP - product listing page, a.k.a category page.
   * PDP - product description page, a.k.a product page. 
   * Cart Page + Cart Overlay(minicart)
-  * Fetch products data from GraphQl server endpoint deployed on Heroku
+  * Fetch products data from GraphQL server endpoint deployed on Heroku
 
   ###### Details
   
