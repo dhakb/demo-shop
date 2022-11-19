@@ -1,10 +1,14 @@
 # DemoShop [preview](https://demo-shop-storefront.herokuapp.com/)
 
-### About and challanges
+### About and challenges
  
  The DemoShop project was pioneering activity from which much has been learned. Main goal was to play around React class components and Redux Toolkit.
- Faced a few challanges in terms of interacting with grapql server from class components using apollo client for the reason didn't want to use deprecated
+ Faced a few challenges in terms of interacting with Graphql server from class components using apollo client for the reason didn't want to use deprecated
  tools. Thanks to Redux Toolkit and its RTK Query job got done. 
+
+Working with GraphQL endpoints are as it's described bellow. When visiting website user receives category names and currency options.
+Depending on it renders navbar. If user visits category fetches products only for specific category. If user visits products page, receives all information about this product.
+Once data is fetched it's persisted in the redux store to enhance performance and avoid unnecessary fetching.
 
 ## Features and stack 
 
@@ -14,13 +18,13 @@
   
   * PLP - product listing page, a.k.a category page.
   * PDP - product description page, a.k.a product page. 
-  * Cart Page + Cart Overlay(minicart)
+  * Cart Page + Cart Overlay(mini-cart)
 
   ###### Details
   
-  * add product to cart from PLP with first attrubutes (options) as default.
+  * add product to cart from PLP with first attributes (options) as default.
   * add/remove products and change their amounts in cart. 
-  * add/remove products from cart overlay (minicart).
+  * add/remove products from cart overlay (mini-cart).
   * add same product with different attributes as a separate item.
   * change currency of the store to one of the available currencies.
   * review product photos on cart page
@@ -28,12 +32,13 @@
 #### Stack 
 
 * React
+    * Class Components
 * Redux Toolkit
    * RTK Query
    * redux-persist
 * React Router 
 * GraphQL
-    * graphq-request
+    * graphql-request
 * CSS
     * React CSS Modules
 
