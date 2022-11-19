@@ -1,5 +1,9 @@
 # DemoShop [preview](https://demo-shop-storefront.herokuapp.com/)
 
+![](https://i.ibb.co/BcRTPzR/demo-shop.png)
+
+
+
 ### About and challenges
  
  The DemoShop project was pioneering activity from which much has been learned. Main goal was to play around React class components and Redux Toolkit.
@@ -17,8 +21,11 @@ Once data is fetched it's persisted in the redux store to enhance performance an
   ###### Functionalities
   
   * PLP - product listing page, a.k.a category page.
-  * PDP - product description page, a.k.a product page. 
+  * PDP - product description page, a.k.a product page.
   * Cart Page + Cart Overlay(mini-cart)
+  * Cart Page + Cart Overlay(mini-cart)
+  * Fetch products data from GraphQL server endpoint deployed on Heroku
+
 
   ###### Details
   
