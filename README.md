@@ -7,8 +7,10 @@
 ### About and challenges
  
  The DemoShop project was pioneering activity from which much has been learned. Main goal was to play around React class components and Redux Toolkit.
- Faced a few challenges in terms of interacting with Graphql server from class components using apollo client for the reason didn't want to use deprecated
+ Faced a few challenges in terms of interacting with Apollo server from class components using apollo client for the reason didn't want to use deprecated
  tools. Thanks to Redux Toolkit and its RTK Query job got done. 
+
+ Apollo server (GraphQL enpoint) is deployed on netlify using netlify functions which is built on top of AWS Lambda functions.
 
 Working with GraphQL endpoints are as it's described bellow. When visiting website user receives category names and currency options.
 Depending on it renders navbar. If user visits category fetches products only for specific category. If user visits products page, receives all information about this product.
