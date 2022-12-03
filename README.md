@@ -1,4 +1,4 @@
-# DemoShop [preview](https://demo-shop-storefront.herokuapp.com/)
+# DemoShop [view](https://demo-shop-storefront.netlify.app/)
 
 ![](https://i.ibb.co/BcRTPzR/demo-shop.png)
 

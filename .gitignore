@@ -18,3 +18,6 @@ yarn-error.log*
 
 # user specific stuff
 /.idea
+
+# Local Netlify folder
+.netlify
