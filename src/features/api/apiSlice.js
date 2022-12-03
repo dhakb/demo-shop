@@ -26,7 +26,7 @@ const graphqlBaseQuery =
 export const apiSlice = createApi({
   reducerPath: "api",
   baseQuery: graphqlBaseQuery({
-    baseUrl: "https://demo-shop-graphql-server.herokuapp.com/",
+    baseUrl: "https://demoshop-graphql-endpoint.netlify.app/.netlify/functions/main",
   }),
   endpoints: (builder) => ({
     getCategories: builder.query({
